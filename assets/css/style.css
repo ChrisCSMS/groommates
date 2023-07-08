@@ -36,3 +36,15 @@ h1 {
 #menu a:hover {
     color: #3466aa;
 }
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url(../images/dog-groom.jpeg) no-repeat center center;
+}
