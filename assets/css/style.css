@@ -21,3 +21,18 @@ h1 {
 #logo {
     float: left;
 }
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #82b7dc;
+}
+
+#menu a:hover {
+    color: #3466aa;
+}
