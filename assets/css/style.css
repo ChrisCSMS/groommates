@@ -44,7 +44,7 @@ header {
 }
 
 #menu a:hover {
-    color: #3466aa;
+    color: #82b7dc;
 }
 
 #hero-outer {
@@ -65,9 +65,13 @@ header {
     font-size: 150%;
     text-align: center;
 
-    width: 20%;
+    width: 15%;
 
-    left: 40%;
+    padding: 1% 0;
+    border-radius: 25px;
+    border: 1px solid #114084;
+
+    left: 42.5%;
     bottom: 10%;
     right: 40%;
 
@@ -81,12 +85,46 @@ header {
     text-decoration: none;
 }
 
-#cover-text a:hover {
+#cover-text a:hover, #cover-text a:visited:hover {
     color: #114084;
+}
+
+#cover-text:hover a:visited {
+    color: #114084;
+}
+
+#cover-text:hover {
+    background-color: #f1f1f1;
 }
 
 #cover-text a:visited {
     color: #3466aa;
+}
+
+#cover-description {
+    color: #F1F1F1;
+    text-shadow: 2px 2px #808080;
+    position: absolute;
+
+    font-family: Arvo, sans-serif;
+    font-size: 150%;
+    text-align: center;
+
+    width: 30%;
+
+    left: 5%;
+    bottom: 30%;
+
+    
+}
+
+#cover-description p {
+    text-align: left;
+    margin-top: 1%;
+    border: solid 2px #82b7dc; 
+    background-color: #82b7dc77;
+    border-radius: 25px;
+    padding: 12px;
 }
 
 #service-heading {
