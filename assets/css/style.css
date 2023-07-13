@@ -134,9 +134,8 @@ header {
 }
 
 .service-box {
-    width: 78%;
-    padding-left: 11%;
-    padding-right: 11%;
+    width: 80%;
+    margin: auto;
 
 }
 
@@ -155,15 +154,21 @@ header {
     display: inline-block;
     height: 100%;
     width: 20%;
-    border: 5px solid #82b7dc;
-    padding: 1%;
+    border-bottom: 5px solid #82b7dc;
     background-color: #82b7dc;
-    margin: 1%;
+    margin: 2.375%;
     text-align: center;
+    font-size: large;
 }
 
 .service-option p {
     color: #F1F1F1;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.service-option span {
+    margin-top: 4%;
 }
 
 .caption {
