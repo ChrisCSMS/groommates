@@ -128,8 +128,11 @@ header {
     padding: 12px;
 }
 
-#service-heading {
+.section-heading {
     text-align: center;
+    font-size: xx-large;
+    color: #f1f1f1;
+    text-shadow: 1px 1px #808080;
     padding: 20px;
 }
 
@@ -173,4 +176,15 @@ header {
 
 .caption {
     display: block;
+}
+
+#gallery-photos {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#gallery-photos > img {
+    width: 100%
 }
