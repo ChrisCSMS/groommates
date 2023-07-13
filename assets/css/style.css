@@ -41,10 +41,77 @@ h1 {
     height: 600px;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 #hero-image {
     height: 600px;
     width: 100%;
     background: url(../images/dog-groom.jpeg) no-repeat center center;
+}
+
+#cover-text {
+    font-family: Arvo, sans-serif;
+    font-size: 150%;
+    text-align: center;
+
+    width: 300px;
+
+    left: 600px;
+    bottom: 50px;
+
+    color: #3466aa;
+    background-color: #82b7dc;
+
+    position: absolute;
+}
+
+#cover-text a {
+    text-decoration: none;
+}
+
+#cover-text a:hover {
+    color: #114084;
+}
+
+#cover-text a:visited {
+    color: #3466aa;
+}
+
+#service-heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-box {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.service-option img {
+    border-radius: 25px;
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.service-option {
+    border-radius: 25px;
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    border: 5px solid;
+    padding: 1%;
+    background-color: #82b7dc;
+    margin: 1%;
+    text-align: center;
+}
+
+.service-option p {
+    color: red;
+}
+
+.caption {
+    display: block;
 }
