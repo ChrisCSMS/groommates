@@ -134,6 +134,7 @@ header {
     color: #f1f1f1;
     text-shadow: 1px 1px #808080;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 .service-box {
@@ -183,8 +184,26 @@ header {
     line-height: 0;
     column-count: 4;
     column-gap: 0;
+    margin-bottom: 2%;
 }
 
 #gallery-photos > img {
     width: 100%
+}
+
+#about-us {
+    width: 80%;
+    margin: auto;
+}
+
+#about-us p {
+    margin-bottom: 2%;
+    font-size: large;
+}
+
+#about-us img {
+    float: left;
+    width: 30%;
+    height: 30%;
+    margin-right: 2%;
 }
