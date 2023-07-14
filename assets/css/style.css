@@ -25,7 +25,7 @@ header {
     padding-bottom: 2%;
     background-image: repeating-radial-gradient(ellipse at top left, rgba(255, 255, 255, 1), rgba(130, 183, 220, 1));
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 1;
 }
@@ -63,7 +63,7 @@ header {
     height: 600px;
     width: 100%;
     background: url(../images/dog-groom.jpeg) no-repeat center center;
-    
+
 }
 
 #cover-text {
@@ -193,7 +193,7 @@ header {
     margin-bottom: 2%;
 }
 
-#gallery-photos > img {
+#gallery-photos>img {
     width: 100%
 }
 
@@ -216,45 +216,51 @@ header {
 
 #contact {
     width: 80%;
-    margin:auto;
+    margin: auto;
 }
 
-#contact h3, #contact p {
+#contact h3,
+#contact p {
     width: 80%;
     margin: auto;
 }
 
 #contact form {
     margin-top: 2%;
-    width:80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-#contact label{
+#contact label {
     font-size: large;
 }
 
-.text-input{
+.text-input {
     width: 40%;
     font-size: large;
     padding: 1%;
 }
-.text-input, #message{
+
+.text-input,
+#message {
     border: solid 1px #114084;
     background-color: #f1f1f1;
 }
-.text-input:hover, #message:hover{
+
+.text-input:hover,
+#message:hover {
     border: solid 1px #3466aa;
     background-color: #f1f1f1a2;
 }
 
-#email{
+#email {
     width: 80%;
 
 }
-#message{
-    width:100%;
+
+#message {
+    width: 100%;
     height: 30%;
     resize: none;
     font-size: large;
@@ -266,11 +272,47 @@ header {
     width: 30%;
     padding-top: 3%;
     padding-bottom: 3%;
-    font-size: large;   
+    font-size: large;
 }
 
 footer {
     width: 100%;
     margin-top: 4%;
     background-image: repeating-radial-gradient(ellipse at top left, rgba(255, 255, 255, 1), rgba(130, 183, 220, 1));
+}
+
+#social-links {
+    font-size: xx-large;
+    column-count: 4;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-content {
+    height: 10%;
+    margin-top: 1%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+address {
+    width: 25%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 8%;
+}
+
+#footer-content p {
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 8%;
+}
+
+#footer-content h2 {
+    width: 33%;
+    text-align: center;
+    display: inline-block;
+    font-size: xx-large;
 }
