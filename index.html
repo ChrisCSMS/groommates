@@ -12,13 +12,14 @@
 </head>
 
 <body>
+    <span id="top"></span>
     <header>
         <a href="index.html">
             <h1 id="logo"><i class="fa-solid fa-paw"></i> GroomMates </h1>
         </a>
         <nav>
             <ul id="menu">
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#about-us">About</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#services">Services</a></li>
@@ -111,16 +112,44 @@
             and their owners. Our friendly staff is always ready to answer any questions and provide advice on pet care
             and grooming maintenance.
         </p>
-        <!-- <h3>Join the GroomMates Family</h3>
-        <p>
-            Join the GroomMates family and experience the joy of having a happy and well-groomed pet.
-            Your dog deserves the best, and we're here to make them look and feel their absolute finest.
-            Trust GroomMates for a grooming experience that goes above and beyond your expectations.
-        </p> -->
         </div>
     </section>
+    <section id="contact">
+        <h2 class="section-heading">Contact us</h2>
+        <h3>Join the GroomMates Family</h3>
+        <p>
+            Experience the joy of having a happy and well-groomed pet.
+            Your dog deserves the best, and we're here to make them look and feel their absolute finest.
+            Trust GroomMates for a grooming experience that goes above and beyond your expectations.
+        </p>
+        <form>
+            <label for="fname">First Name:</label>
+            <br>
+            <input type="text" class="text-input" id="fname" name="fname" required>
+            <br>
+            <label for="lname">Last Name:</label>
+            <br>
+            <input type="text" class="text-input" id="lname" name="lname" required> 
+            <br><br>
+            <label for="email">Email Address:</label>
+            <br>
+            <input type="email" class="text-input" id="email" name="email" required>
+            <br><br>
+            <label for="message">Message:</label>
+            <br>
+            <textarea cols="80" rows="8" class="text-area" id="message" name="message"></textarea>
+            <br>
+            <input type="submit" id="submit" name="submit" value="Submit">
+            
+        </form>
+    </section>
     <footer>
-        Social links and contact info
+        <ul id="social-links">
+            <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook" style="color: #114084;"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter" style="color: #114084;"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="color: #114084;"></i></a></li>
+            <li><a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok" style="color: #114084;"></i></a></li>
+        </ul>
     </footer>
     <script src="https://kit.fontawesome.com/6705909493.js" crossorigin="anonymous"></script>
 </body>
