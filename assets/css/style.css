@@ -23,6 +23,7 @@ h1 {
 header {
     padding-top: 2%;
     padding-bottom: 2%;
+    height:4%;
     background-image: repeating-radial-gradient(ellipse at top left, rgba(255, 255, 255, 1), rgba(130, 183, 220, 1));
     position: fixed;
     top: 0;
@@ -146,7 +147,8 @@ header {
 .service-box {
     width: 80%;
     margin: auto;
-
+    display: flex;
+    flex-direction: row;
 }
 
 .service-option img {
@@ -155,13 +157,14 @@ header {
     max-width: 100%;
     display: block;
     object-fit: cover;
-    width: 320px;
+    width: 100%;
     height: 500px;
 }
 
 .service-option {
     border-radius: 25px;
-    display: inline-block;
+    /* display: flex; */
+    flex: 1;
     height: 100%;
     width: 20%;
     border-bottom: 5px solid #82b7dc;
@@ -169,6 +172,27 @@ header {
     margin: 2.375%;
     text-align: center;
     font-size: large;
+}
+
+@media screen and (max-width: 1350px){
+    .service-option{
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 1000px){
+    .service-box{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .service-option{
+        flex: 1 0 calc(40%); 
+    }
+}
+@media screen and (max-width: 720px){
+    
+    .service-option{
+        flex: 1 0 calc(80%); 
+    }
 }
 
 .service-option p {
@@ -287,6 +311,10 @@ footer {
     list-style: none;
     width: 100%;
     text-align: center;
+    column-rule: 2px solid #3465aab9;
+    padding-top: 1%;
+    margin-bottom: 1%;
+
 }
 
 #footer-content {
