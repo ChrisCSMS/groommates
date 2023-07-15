@@ -71,7 +71,7 @@ header {
 
 }
 
-#cover-text {
+#book-now-button {
     font-family: Arvo, sans-serif;
     font-size: 150%;
     text-align: center;
@@ -87,24 +87,31 @@ header {
     color: #F1F1F1;
 }
 
-#cover-text a {
+#book-now-button a {
     text-decoration: none;
 }
+#book-now-button a:link{
+    color: #f1f1f1;
+}
 
-#cover-text a:hover,
-#cover-text a:visited:hover {
+#book-now-button a:hover,
+#book-now-button a:visited:hover {
     color: #3466aa;
 }
 
-#cover-text:hover a:visited {
+#book-now-button:hover a:visited {
     color: #3466aa;
 }
 
-#cover-text:hover {
+#book-now-button:hover {
     background-color: #f1f1f1;
+    color: #3466aa;
+}
+#book-now-button:hover a:link{
+    color: #3466aa;
 }
 
-#cover-text a:visited {
+#book-now-button a:visited {
     color: #f1f1f1;
 }
 
@@ -369,7 +376,7 @@ address {
         margin: auto;
     }
 
-    #cover-text {
+    #book-now-button {
         width: 30%;
     }
 
