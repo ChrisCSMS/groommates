@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cabin&display=swap');
 
+/* Remove default padding, margins and borders */
 * {
     padding: 0;
     margin: 0;
     border: none;
 }
-
+/* Set the default font, color and background for the page */
 body {
     font-family: Cabin, sans-serif;
     background-image: repeating-radial-gradient(ellipse at top left, rgba(255, 255, 255, 1), rgba(130, 183, 220, 1));
     color: #3466aa;
 }
 
+/* Styles for the nav bar, logo and menu */
 h1 {
     margin-left: 1em;
     font-family: Arvo, sans-serif;
@@ -23,7 +25,7 @@ h1 {
 header {
     padding-top: 2%;
     padding-bottom: 2%;
-    height:4%;
+    height: 4%;
     background-image: repeating-radial-gradient(ellipse at top left, rgba(255, 255, 255, 1), rgba(130, 183, 220, 1));
     position: fixed;
     top: 0;
@@ -52,6 +54,8 @@ header {
     color: #82b7dc;
 }
 
+/* Styles for the hero image, "why choose us?" section and the "Book Now" button */
+
 #hero-outer {
     height: 600px;
     width: 100%;
@@ -79,14 +83,8 @@ header {
     border-radius: 25px;
     border: 1px solid #114084;
 
-    /* left: 42.5%;
-    bottom: 10%;
-    right: 40%; */
-
     color: #3466aa;
     background-color: #82b7dc;
-
-    /* position: absolute; */
 }
 
 #cover-text a {
@@ -113,7 +111,6 @@ header {
 #cover-description {
     color: #F1F1F1;
     text-shadow: 2px 2px #808080;
-    /* position: absolute; */
 
     font-family: Arvo, sans-serif;
     font-size: 150%;
@@ -123,10 +120,6 @@ header {
     padding-top: 8%;
     padding-left: 4%;
     padding-bottom: 2%;
-
-    /* left: 5%;
-    bottom: 30%; */
-
 
 }
 
@@ -139,6 +132,8 @@ header {
     padding: 12px;
 }
 
+/* Style for the heading of each section */
+
 .section-heading {
     text-align: center;
     font-size: xx-large;
@@ -149,6 +144,7 @@ header {
     padding-top: 8%;
 }
 
+/* Styles for the services section */
 .service-box {
     width: 80%;
     margin: auto;
@@ -168,7 +164,6 @@ header {
 
 .service-option {
     border-radius: 25px;
-    /* display: flex; */
     flex: 1;
     height: 100%;
     width: 20%;
@@ -193,6 +188,8 @@ header {
     display: block;
 }
 
+/* Styles for the gallery */
+
 #gallery-photos {
     clear: both;
     line-height: 0;
@@ -204,6 +201,8 @@ header {
 #gallery-photos>img {
     width: 100%
 }
+
+/* Styles for the About Us section */
 
 #about-us {
     width: 80%;
@@ -221,6 +220,8 @@ header {
     height: 30%;
     margin-right: 2%;
 }
+
+/* Styles for the contact form */
 
 #contact {
     width: 80%;
@@ -283,6 +284,8 @@ header {
     font-size: large;
 }
 
+/* Styles for the footer and social media links */
+
 footer {
     width: 100%;
     margin-top: 4%;
@@ -329,52 +332,62 @@ address {
     font-size: xx-large;
 }
 
-@media screen and (max-width: 1350px){
-    .service-option{
+/* Styles for making the page responsive */
+
+@media screen and (max-width: 1350px) {
+    .service-option {
         font-size: medium;
     }
-    
+
 }
 
-@media screen and (max-width: 1000px){
-    .service-box{
+@media screen and (max-width: 1000px) {
+    .service-box {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .service-option{
-        flex: 1 0 calc(40%); 
+
+    .service-option {
+        flex: 1 0 calc(40%);
     }
-    #cover-description{
+
+    #cover-description {
         width: 60%;
         padding-top: 15%;
         padding-left: 0;
-        margin:auto;
+        margin: auto;
     }
+
     #cover-text {
         width: 30%;
     }
+
     #gallery-photos {
         column-count: 2;
     }
 
 }
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px) {
     #menu {
         display: none;
     }
 }
 
-@media screen and (max-width: 720px){
-    
-    .service-option{
-        flex: 1 0 calc(80%); 
+@media screen and (max-width: 720px) {
+
+    .service-option {
+        flex: 1 0 calc(80%);
     }
-    #cover-description{
+
+    #cover-description {
         font-size: large;
     }
+
     #gallery-photos {
         column-count: 1;
     }
+
     #footer-content p {
         padding-top: 7%;
         float: right;
