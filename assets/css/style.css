@@ -57,7 +57,7 @@ header {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-top: 6.5%;
+    margin-top: 4%;
 }
 
 #hero-image {
@@ -74,18 +74,19 @@ header {
 
     width: 15%;
 
+    margin: auto;
     padding: 1% 0;
     border-radius: 25px;
     border: 1px solid #114084;
 
-    left: 42.5%;
+    /* left: 42.5%;
     bottom: 10%;
-    right: 40%;
+    right: 40%; */
 
     color: #3466aa;
     background-color: #82b7dc;
 
-    position: absolute;
+    /* position: absolute; */
 }
 
 #cover-text a {
@@ -112,16 +113,19 @@ header {
 #cover-description {
     color: #F1F1F1;
     text-shadow: 2px 2px #808080;
-    position: absolute;
+    /* position: absolute; */
 
     font-family: Arvo, sans-serif;
     font-size: 150%;
     text-align: center;
 
     width: 30%;
+    padding-top: 8%;
+    padding-left: 4%;
+    padding-bottom: 2%;
 
-    left: 5%;
-    bottom: 30%;
+    /* left: 5%;
+    bottom: 30%; */
 
 
 }
@@ -178,7 +182,9 @@ header {
     .service-option{
         font-size: medium;
     }
+    
 }
+
 @media screen and (max-width: 1000px){
     .service-box{
         flex-direction: row;
@@ -187,11 +193,29 @@ header {
     .service-option{
         flex: 1 0 calc(40%); 
     }
+    #cover-description{
+        width: 60%;
+        padding-top: 15%;
+        padding-left: 0;
+        margin:auto;
+    }
+    #cover-text {
+        width: 30%;
+    }
 }
+@media screen and (max-width: 800px){
+    #menu {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 720px){
     
     .service-option{
         flex: 1 0 calc(80%); 
+    }
+    #cover-description{
+        font-size: large;
     }
 }
 
