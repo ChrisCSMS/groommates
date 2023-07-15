@@ -6,11 +6,21 @@
     margin: 0;
     border: none;
 }
+
 /* Set the default font, color and background for the page */
 body {
     font-family: Cabin, sans-serif;
     background-image: repeating-radial-gradient(ellipse at top left, rgba(255, 255, 255, 1), rgba(130, 183, 220, 1));
     color: #3466aa;
+}
+
+.prevent-select {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
 }
 
 /* Styles for the nav bar, logo and menu */
@@ -37,12 +47,42 @@ header {
     float: left;
 }
 
-#menu li {
+nav {
     float: right;
+    width: 50%;
+}
+
+#menu {
+    width: 470px;
+    float: right;
+}
+
+
+#menu li {
     list-style-type: none;
     font-size: x-large;
-    margin-right: 1%;
     margin-top: 5px;
+    display: inline-block;
+    padding-left: 3%;
+}
+
+#menu-button {
+    position: absolute;
+    left: 10000px;
+}
+
+#menu-button-label {
+    display: none;
+}
+
+#menu-close {
+    display: none;
+}
+
+#menu ul {
+    width: 50%;
+    height: 4%;
+    float: right;
 }
 
 #menu a {
@@ -90,7 +130,8 @@ header {
 #book-now-button a {
     text-decoration: none;
 }
-#book-now-button a:link{
+
+#book-now-button a:link {
     color: #f1f1f1;
 }
 
@@ -107,7 +148,8 @@ header {
     background-color: #f1f1f1;
     color: #3466aa;
 }
-#book-now-button:hover a:link{
+
+#book-now-button:hover a:link {
     color: #3466aa;
 }
 
@@ -299,7 +341,7 @@ header {
 
 #submit:hover {
     background-color: #F1F1F1;
-    color:#3466aa
+    color: #3466aa
 }
 
 /* Styles for the footer and social media links */
@@ -387,8 +429,79 @@ address {
 }
 
 @media screen and (max-width: 800px) {
+    #menu-button-label {
+        display: block;
+        float: right;
+        margin-right: 5%;
+        font-size: xx-large;
+    }
+
     #menu {
         display: none;
+    }
+
+    #menu-button:checked~#menu-close {
+        display: block;
+        position: absolute;
+        right: 2%;
+        top: 10%;
+        z-index: 3;
+        font-size: xx-large;
+        background-color: #82b7dc;
+        padding: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    #menu-button:checked~#menu {
+
+        display: flex;
+        flex-direction: column;
+        column-count: 1;
+
+        top: 0;
+        right: 0;
+
+        width: 50%;
+        height: 100%;
+
+        position: fixed;
+
+        justify-content: center;
+        text-align: center;
+        background-color: #114084;
+
+        border-right: solid 4px #114084;
+
+    }
+
+    #menu-button:checked~#menu li {
+        width: 100%;
+        color: #F1F1F1;
+        padding: 4% 0;
+        font-size: xx-large;
+        border: 2px solid #114084;
+        background-color: #82b7dc;
+        margin: 0;
+    }
+
+    #menu-button:checked~#menu li a {
+        color: #f1f1f1;
+    }
+
+    #menu-button:checked~#nav {
+        margin: auto;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        float: none;
+    }
+
+    nav {
+        width: 10%;
     }
 }
 
