@@ -20,6 +20,9 @@ https://chriscsms.github.io/groommates/
 * [Design](#design)
 * [Features](#features)
 * [Technologies Used](#technologies-used)
+* [Deployment and Local Development](#deployment-and-local-development)
+* [Testing](#testing)
+* [Credits](#credits)
 
 - - -
 
@@ -59,7 +62,7 @@ The dog grooming business GroomMates based in Dublin, is looking to give themsel
 
 ### Frequent Visitor Goals
 
-I want to check for any updated images in the gallery.
+* I want to check for any updated images in the gallery.
 
 - - -
 
@@ -189,20 +192,55 @@ To clone this repository:
 
 # Testing 
 
-
+Chrome Developer Tools was used to test the site during its development to recognize and source any issues and to resolve them.
 
 ## Automated Testing
 
+The code was passed through the W3C validator for HTML and the W3C Validator for CSS without any errors.
+
+![Screenshot of html testing](assets/images/w3c-html-validation.png)
+
+![Screenshot of css testing](assets/images/w3c-css-validation.png)
+
+Lighthouse within Chrome Developer Tools was also used to test performance on desktop and mobile.
+
+#### Desktop
+
+![Screenshot of lighthouse testing](assets/images/lighthouse.png)
+
+#### Mobile
+
+![Screenshot of home page](assets/images/lighthouse-mobile.png)
+
 ## Manual Testing 
 
-## Bugs
+As a user: 
+
+* Page loads and everything is visible. 
+* Nav bar is readible and links connect to appropriate content.
+* Button on header brings user to appropriate location.
+* Navigation is shown to be highlighted by altering colours. 
+* Nav bar and header follow user throughout the page effectively. 
+* Images are clear and have an appropriate resolution.
+* The form works as intended with users needing to input the correct information. 
+* Social media links are clear, readible and link to the correct location.
+
+- - -
 
 # Credits
-
-## Code Used 
-
+ 
 ## Content
+
+All content was written by myself. 
 
 ## Media 
 
+The images used within the site are downloaded from Pexels and Pixabay.
+
 ## Acknowledgements
+
+I would like to acknowledge the help I recieved in developing this project.
+
+* Slack Community, for advice and recommendations.
+* W3Schools for their helpful tutorials. 
+* Code Institute Love Running project which prepared me for this project. 
