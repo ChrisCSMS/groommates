@@ -159,7 +159,7 @@ nav {
 
 #cover-description {
     color: #F1F1F1;
-    text-shadow: 2px 2px #808080;
+    text-shadow: 2px 2px #114084;
 
     font-family: Arvo, sans-serif;
     font-size: 150%;
@@ -186,8 +186,8 @@ nav {
 .section-heading {
     text-align: center;
     font-size: xx-large;
-    color: #f1f1f1;
-    text-shadow: 1px 1px #808080;
+    color: #3466aa;
+    text-shadow: 1px 1px #82b7dc;
     padding: 20px;
     text-transform: uppercase;
     padding-top: 8%;
